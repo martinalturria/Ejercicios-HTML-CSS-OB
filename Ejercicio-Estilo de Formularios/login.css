@@ -1,0 +1,165 @@
+/* Importamos la fuente que utilizaremos */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu',sans-serif;
+    color: white;
+}
+body{
+    background-color: #161717;
+}
+
+/* Acomodamos el contenedor */
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 450px;
+}
+
+.botones{
+    align-self: flex-start;
+    display: flex;
+    gap: 30px;
+} 
+
+/* Editamos el area correspondiente al boton de google */
+.google-btn{
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+.google-btn:hover{
+    opacity: 0.75;
+}
+.google-btn picture{
+    width: 35px;
+    background-color: white;
+    height: 35px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google-btn span {
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+}
+.google-btn picture img {
+    width: 75%;
+}
+
+/* Boton Twiter */
+.twiter-btn {
+    background-color: #eee;
+    border: none;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.twiter-btn picture{
+    color: black;
+}
+.twiter-btn:hover {
+    background-color: #ddd;
+}
+
+/* Separator Area */
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+.separator span {
+    color: #8b8b8b;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+}
+.section-input {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label span {
+    font-weight: 700;
+}
+.section-input label input {
+    width: 80%;
+    background-color: #212121;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+label input {
+    width: 90%;
+    background-color: #212121;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+label input:hover {
+    background-color: #454045;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+label input:focus {
+    background-color: #454045;
+    border: 1px solid #f3f3f4;
+    box-shadow: 0 0 4px #eb50ff4f;
+}
+
+/* Checkbox y boton final */
+.checkbox-label {
+    display: flex;
+    flex-direction: row;
+}
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+}
+.checkbox-label span {
+    font-weight: 400;
+}
+.btn-submit {
+    background-color: #EA4C89;
+    font-weight: 500;
+    font-size: 14pt;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    opacity: 0.75;
+}
